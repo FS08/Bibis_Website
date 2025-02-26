@@ -28,6 +28,19 @@ header h1 {
     background-color: #ba46ef;
   }
 
+h1 a {
+    background-color: purple;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+h1 a:hover {
+    background-color: #d98de0;
+}
+
+
 /* Style global */
 body {
     font-family: Arial, sans-serif;

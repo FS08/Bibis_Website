@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dump Vacances</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <!-- Section pour le titre -->
+        <h1>
+            <a href="index.html">Beatriz Alves's Website</a>
+        </h1>
+        <!-- Bouton pour afficher/masquer la liste -->
+        <button onclick="toggleNav()">☰</button>
+        <!-- Barre de navigation -->
+        <nav>
+            <ul id="nav-list" style="display: none;">
+                <li><a href="Photos.html">Mes photos</a></li>
+                <li><a href="musique.html">Mes musiques préférées</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Image -->
+    <section id="image">
+        <h2>Dump Vacances</h2>
+        <!-- Section pour ton image etc... -->
+        <center> 
+        <img src="Dump Vacances/photo1.jpg">
+         <p>Penich</p>
+         <img src="Dump Vacances/photo10.jpg">
+         <p>Baleal</p>
+         <img src="Dump Vacances/photo2.jpg">
+         <p>Lausanne</p>
+         <img src="Dump Vacances/photo3.jpg">
+         <p>Cannes</p>
+         <img src="Dump Vacances/photo4.JPG">
+         <p>Gstaad</p>
+         <img src="Dump Vacances/photo5.jpg">
+         <p>Villars</p>
+         <img src="Dump Vacances/photo6.jpg">
+         <p>Villars</p>
+         <img src="Dump Vacances/photo7.jpg">
+         <p>Villars</p>
+         <img src="Dump Vacances/photo8.jpg">
+         <p>Penich</p>
+         <img src="Dump Vacances/photo9.jpg">
+         <p>Baleal</p>
+         </center>
+        
+
+    </section>
+
+    <!-- Script pour afficher/masquer la liste de liens -->
+    <script>
+        function toggleNav() {
+        const navList = document.getElementById("nav-list");
+        if (navList.style.display === "none" || navList.style.display === "") {
+            navList.style.display = "block";
+        } else {
+            navList.style.display = "none";
+        }
+        }
+    </script>
+
+</body>
