@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <!-- Section pour le titre -->
+        <h1>Beatriz Alves's Website</h1>
+        <!-- Bouton pour afficher/masquer la liste -->
+        <button onclick="toggleNav()">☰</button>
+        <!-- Barre de navigation -->
+        <nav>
+            <ul id="nav-list" style="display: none;">
+                <li><a href="#about">À propos de moi</a></li>
+                <li><a href="#image">Ma photo</a></li>
+                <li><a href="#Hobby">Mes Hobbys</a></li>
+                <li><a href="#Musique">Ma musique préférée</a></li>
+                <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <div>
+            <p>je m'appelle Beatriz, j'ai 14 ans et je suis étudiante.
+                 J'aime bien les chats, ma famille, Valorant et les animaux. </p>
+        </div>
+    </section>
+
+    <!-- Section Image -->
+    <section id="image">
+        <h2>Ma Photo</h2>
+        <!-- Section pour ton image etc... -->
+        <img src="image.JPG" alt="Sushiii">
+        <p>Voici MON Sushiii</p>
+    </section>
+
+    <!-- Section Hobby -->
+    <section id="Hobby">
+        <h2>Mes Hobbys</h2>
+        <div>
+            <p>Je fais du basket en dehors des cours, je joue aux jeux vidéos et je lis.</p>
+        </div>
+    </section>
+
+    <!-- Section Musique -->
+    <section id="Musique">
+        <h2>Ma musique préférée</h2>
+        <div>
+            <p>Voici ma 2ème musique préférée, car la première ne marche pas 😢 </p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E_i0iVloA18?si=juJhL-dEMwgbvij7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="https://formspree.io/f/xanqgazq" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Script pour afficher/masquer la liste de liens -->
+    <script>
+        function toggleNav() {
+        const navList = document.getElementById("nav-list");
+        if (navList.style.display === "none" || navList.style.display === "") {
+            navList.style.display = "block";
+        } else {
+            navList.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Titre du site */
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Bouton pour afficher/masquer la liste */
+  header button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #7405d6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  header button:hover {
+    background-color: #ba46ef;
+  }
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0d4fb; /* Choisis la couleur de fond que tu préfères */
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête */
+header {
+    background-color: #fac9eb;
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(242, 243, 240, 0.849);
+    border-radius: 8px;
+}
+/* Hobby */
+#Hobby {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(242, 243, 240, 0.849);
+    border-radius: 8px;
+}
+
+/* Image */
+#image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Formulaire */
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d98de0;
+}
+
+form button {
+    background-color: #f7c6e7e9;
+    color: rgb(5, 5, 5);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #dfbdee;
+}
